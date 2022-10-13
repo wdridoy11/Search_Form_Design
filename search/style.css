@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------- Search form --------------------*/
+.search-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+    width: 500px;
+    box-shadow: inset 2px 2px 2px 0px rgb(255 255 255 / 50%), 7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.search-box i {
+    font-size: 21px;
+    padding: 0 10px 0 14px;
+}
+
+.search-box input {
+    width: 456px;
+    padding: 17px 5px;
+    border: none;
+    font-size: 17px;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+/*------------------- Search form responsive --------------------*/
+
+@media screen and (max-width:566px) {
+    .search-box {
+        width: 446px;
+    }
+}
+
+@media screen and (max-width:484px) {
+    .search-box {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:432px) {
+    .search-box {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .search-box {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:378px) {
+    .search-box {
+        width: 320px;
+    }
+}
